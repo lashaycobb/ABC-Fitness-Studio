@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Fitness Studio - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" alt="ABC Fitness Studio Logo" class="logo">
+
+    <h1>ABC Fitness Studio</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Fitness Equipment Gallery</h2>
+
+    <p>
+        Explore our selection of fitness and training equipment.
+    </p>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="images/equipment1.jpg"
+                     alt="Fitness equipment"
+                     class="product-image">
+                <br>
+                Fitness Equipment 1
+            </td>
+
+            <td>
+                Quality equipment designed to support your workouts.
+            </td>
+
+            <td>$50.00</td>
+
+            <td>
+                <button onclick="addToCart('Fitness Equipment 1', 50)">
+                    Add to Cart
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="images/equipment2.jpg"
+                     alt="Fitness equipment"
+                     class="product-image">
+                <br>
+                Fitness Equipment 2
+            </td>
+
+            <td>
+                Equipment for strength and fitness training.
+            </td>
+
+            <td>$75.00</td>
+
+            <td>
+                <button onclick="addToCart('Fitness Equipment 2', 75)">
+                    Add to Cart
+                </button>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <button onclick="viewCart()">View Cart</button>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="processOrder()">Process Order</button>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ABC Fitness Studio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
