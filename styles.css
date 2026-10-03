@@ -1,0 +1,132 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    color: #001F3F;
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #001F3F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #001F3F;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    color: #20458E;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #D3D3D3;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #20458E;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #634E99;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #D3D3D3;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #20458E;
+    color: white;
+}
+
+.product-image {
+    width: 150px;
+    height: auto;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+footer {
+    background-color: #001F3F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .product-image {
+        width: 100px;
+    }
+}
