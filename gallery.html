@@ -1,102 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Fitness Studio - Gallery</title>
+    <meta name="description" content="Browse fitness accessories and equipment from ABC Fitness Studio.">
+    <title>ABC Fitness Studio | Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="ABC Fitness Studio home">
+            <span class="brand-mark" aria-hidden="true">ABC</span>
+            <span>Fitness Studio</span>
+        </a>
 
-<header>
-    <img src="images/logo.png" alt="ABC Fitness Studio Logo" class="logo">
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="about.html">About Us / Contact</a>
+            <a href="community.html">Community</a>
+        </nav>
+    </header>
 
-    <h1>ABC Fitness Studio</h1>
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">ABC FITNESS STUDIO</p>
+            <h1>Fitness Gallery</h1>
+            <p>
+                Explore fitness essentials to support your workouts,
+                yoga practice, and healthy lifestyle.
+            </p>
+        </section>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-        <a href="community.html">Community</a>
-    </nav>
-</header>
+        <section class="section">
+            <div class="section-heading">
+                <h2>Shop Fitness Essentials</h2>
+                <p>
+                    Select an item to add it to your shopping cart.
+                    The prices below are sample prices; replace them with
+                    the prices provided in your client materials if available.
+                </p>
+            </div>
 
-<main>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img
+                        src="Client2_YogaMat.png"
+                        alt="Yoga mat for stretching and yoga practice"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Yoga Mat</h3>
+                        <p>A comfortable mat for yoga, stretching, and floor exercises.</p>
+                        <p class="product-price">$25.00</p>
+                        <button
+                            class="button"
+                            type="button"
+                            onclick="addToCart('Yoga Mat', 25)"
+                        >
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
 
-    <h2>Fitness Equipment Gallery</h2>
+                <article class="product-card">
+                    <img
+                        src="Client2_TeeShirt.png"
+                        alt="ABC Fitness Studio T-shirt"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Fitness T-Shirt</h3>
+                        <p>A studio T-shirt for workouts and everyday activities.</p>
+                        <p class="product-price">$20.00</p>
+                        <button
+                            class="button"
+                            type="button"
+                            onclick="addToCart('Fitness T-Shirt', 20)"
+                        >
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
 
-    <p>
-        Explore our selection of fitness and training equipment.
-    </p>
+                <article class="product-card">
+                    <img
+                        src="Client2_WaterBottle.png"
+                        alt="Reusable fitness water bottle"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Water Bottle</h3>
+                        <p>Keep water close by during your classes and workouts.</p>
+                        <p class="product-price">$15.00</p>
+                        <button
+                            class="button"
+                            type="button"
+                            onclick="addToCart('Water Bottle', 15)"
+                        >
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Action</th>
-        </tr>
+        <section class="section cart-section" id="shopping-cart">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR SELECTIONS</p>
+                <h2>Shopping Cart</h2>
+                <p>
+                    Add products above, then view your cart or process your order.
+                </p>
+            </div>
 
-        <tr>
-            <td>
-                <img src="images/equipment1.jpg"
-                     alt="Fitness equipment"
-                     class="product-image">
-                <br>
-                Fitness Equipment 1
-            </td>
-
-            <td>
-                Quality equipment designed to support your workouts.
-            </td>
-
-            <td>$50.00</td>
-
-            <td>
-                <button onclick="addToCart('Fitness Equipment 1', 50)">
-                    Add to Cart
+            <div class="cart-actions">
+                <button class="button" type="button" onclick="viewCart()">
+                    View Cart
                 </button>
-            </td>
-        </tr>
 
-        <tr>
-            <td>
-                <img src="images/equipment2.jpg"
-                     alt="Fitness equipment"
-                     class="product-image">
-                <br>
-                Fitness Equipment 2
-            </td>
-
-            <td>
-                Equipment for strength and fitness training.
-            </td>
-
-            <td>$75.00</td>
-
-            <td>
-                <button onclick="addToCart('Fitness Equipment 2', 75)">
-                    Add to Cart
+                <button class="button button-secondary" type="button" onclick="clearCart()">
+                    Clear Cart
                 </button>
-            </td>
-        </tr>
 
-    </table>
+                <button class="button" type="button" onclick="processOrder()">
+                    Process Order
+                </button>
+            </div>
 
-    <br>
+            <div id="cartContents" class="cart-contents" aria-live="polite">
+                <p>Your cart contents will appear here when you select View Cart.</p>
+            </div>
+        </section>
+    </main>
 
-    <button onclick="viewCart()">View Cart</button>
-    <button onclick="clearCart()">Clear Cart</button>
-    <button onclick="processOrder()">Process Order</button>
-
-</main>
-
-<footer>
-    <p>&copy; 2026 ABC Fitness Studio</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 ABC Fitness Studio. All rights reserved.</p>
+        <p>Move with purpose. Grow together.</p>
+    </footer>
 </body>
 </html>
