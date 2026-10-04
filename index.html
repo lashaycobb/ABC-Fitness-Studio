@@ -4,72 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Fitness Studio - Home</title>
+    <meta name="description" content="ABC Fitness Studio offers yoga, Pilates, Zumba, and fitness equipment to support a healthy lifestyle.">
+    <title>ABC Fitness Studio | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="ABC Fitness Studio home">
+            <span class="brand-mark" aria-hidden="true">ABC</span>
+            <span>Fitness Studio</span>
+        </a>
 
-<header>
-    <img src="images/logo.png"
-         alt="ABC Fitness Studio Logo" class="logo">
-    <h1>ABC Fitness Studio</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us / Contact</a>
+            <a href="community.html">Community</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-        <a href="community.html">Community</a>
-    </nav>
-</header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">MOVE • BREATHE • GROW</p>
+                <h1>Welcome to ABC Fitness Studio</h1>
+                <p>
+                    Your local space for movement, wellness, and community.
+                    Discover classes that help you build strength, improve
+                    flexibility, and feel your best.
+                </p>
+                <a class="button" href="gallery.html">Explore Our Gallery</a>
+            </div>
+        </section>
 
-<main>
-    <section>
-        <h2>Welcome to ABC Fitness Studio</h2>
-        <p>
-            Welcome to ABC Fitness Studio, your local destination for
-            fitness, health, and wellness. We provide a welcoming space
-            where everyone can work toward a healthier, more active life.
-        </p>
-        <p>
-            Explore our classes, discover our fitness equipment, and
-            become part of our community.
-        </p>
-    </section>
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR MOVEMENT</p>
+                <h2>Classes for Every Fitness Journey</h2>
+                <p>
+                    Whether you want to relax, strengthen your body, or enjoy
+                    an energetic workout, there is a place for you here.
+                </p>
+            </div>
 
-    <section>
-        <h2>Our Fitness Classes</h2>
+            <div class="card-grid">
+                <article class="content-card">
+                    <img
+                        src="Client2_IndividualYoga.png"
+                        alt="Yoga class at ABC Fitness Studio"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Yoga</h3>
+                        <p>
+                            Improve flexibility, practice mindful breathing,
+                            and find balance in a welcoming environment.
+                        </p>
+                    </div>
+                </article>
 
-        <h3>Yoga</h3>
-        <p>Improve flexibility, balance, and relaxation.</p>
+                <article class="content-card">
+                    <img
+                        src="Client2_IndividualPilates.png"
+                        alt="Pilates workout at ABC Fitness Studio"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Pilates</h3>
+                        <p>
+                            Build core strength, improve posture, and develop
+                            controlled, balanced movement.
+                        </p>
+                    </div>
+                </article>
 
-        <h3>Pilates</h3>
-        <p>Build core strength and improve body control.</p>
+                <article class="content-card">
+                    <img
+                        src="Client2_IndividualKickboxing.png"
+                        alt="Kickboxing fitness activity"
+                        loading="lazy"
+                    >
+                    <div class="card-content">
+                        <h3>Energetic Workouts</h3>
+                        <p>
+                            Challenge yourself with active workouts that help
+                            you stay motivated and moving.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-        <h3>Zumba</h3>
-        <p>Enjoy an energetic workout with music and dance.</p>
-    </section>
+            <p class="center-text">
+                Interested in our classes? Visit our
+                <a href="about.html">Contact Us page</a> to send an inquiry.
+            </p>
+        </section>
 
-    <section>
-        <h2>Support Your Fitness Journey</h2>
-        <p>
-            Explore our selection of fitness and training equipment
-            to help you work toward your personal fitness goals.
-        </p>
-        <a href="gallery.html">View Fitness Equipment</a>
-    </section>
+        <section class="section section-soft">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR FITNESS ESSENTIALS</p>
+                <h2>Equipment for Your Journey</h2>
+                <p>
+                    Explore fitness accessories and equipment to support
+                    your practice at home or in the studio.
+                </p>
+                <a class="button" href="gallery.html">Shop the Gallery</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>Visit Us</h2>
-        <p>Monday-Friday: 6:00 a.m.-8:00 p.m.</p>
-        <p>Saturday: 8:00 a.m.-6:00 p.m.</p>
-        <p>Sunday: Closed</p>
-        <a href="about.html">Contact Us</a>
-    </section>
-</main>
+        <section class="section hours-section">
+            <div class="section-heading">
+                <p class="eyebrow">PLAN YOUR VISIT</p>
+                <h2>Studio Hours</h2>
+            </div>
 
-<footer>
-    <p>&copy; 2026 ABC Fitness Studio</p>
-</footer>
+            <div class="hours-card">
+                <p><strong>Monday–Friday:</strong> 6:00 a.m.–8:00 p.m.</p>
+                <p><strong>Saturday:</strong> 8:00 a.m.–6:00 p.m.</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </section>
 
+        <section class="section subscribe-section" id="subscribe">
+            <div class="section-heading">
+                <p class="eyebrow">STAY CONNECTED</p>
+                <h2>Subscribe to Our Updates</h2>
+                <p>
+                    Sign up to receive studio news, class updates, and
+                    community announcements.
+                </p>
+            </div>
+
+            <form id="subscribeForm" class="form-card">
+                <div class="form-group">
+                    <label for="subscriberName">Your name</label>
+                    <input
+                        type="text"
+                        id="subscriberName"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subscriberEmail">Email address</label>
+                    <input
+                        type="email"
+                        id="subscriberEmail"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <button class="button" type="submit">Subscribe</button>
+                <p id="subscribeMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ABC Fitness Studio. All rights reserved.</p>
+        <p>Move with purpose. Grow together.</p>
+    </footer>
 </body>
 </html>
